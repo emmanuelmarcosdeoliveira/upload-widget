@@ -1,0 +1,50 @@
+import * as Progress from "@radix-ui/react-progress";
+import { Download, ImageUp, Link2, RefreshCcw, X } from "lucide-react";
+import Button from "./ui/button";
+
+export function UploadWidgetUploadItem() {
+  return (
+    <div className="p-3 rounded-lg flex flex-col gap-3 shadow-space bg-white/5 relative overflow-hidden">
+      <div className="flex flex-col gap-1">
+        <span className="flex text-xs font-medium items-center gap-1">
+          <ImageUp strokeWidth={1.5} className="size-3 text-zinc-300" />
+          screenshot.png
+        </span>
+        <span className=" flex items-center text-[10px] text-zinc-400 gap-1.5">
+          <span>1.2 MB</span>
+          <div className="size-1 rounded-full bg-zinc-400" />
+          <span className="line-through">300kb</span>
+          <span className="text-green-400 ml-1">-94%</span>{" "}
+          <div className="size-1 rounded-full bg-zinc-400" />
+          <span>45%</span>
+        </span>
+      </div>
+      <Progress.Root className="bg-zinc-800 rounded-full h-1 overflow-hidden group">
+        <Progress.Indicator
+          className="bg-indigo-500
+         h-1"
+          style={{ width: "43%" }}
+        />
+      </Progress.Root>
+
+      <div className="absolute top-2.5 right-2.5 flex items-center gap-1">
+        <Button size="icon-sm">
+          <Download className="size-4" strokeWidth={1.5} />
+          <span className="sr-only">Download compress image</span>
+        </Button>
+        <Button size="icon-sm">
+          <Link2 className="size-4" strokeWidth={1.5} />
+          <span className="sr-only">Copy remote URL</span>
+        </Button>
+        <Button size="icon-sm">
+          <RefreshCcw className="size-4" strokeWidth={1.5} />
+          <span className="sr-only">Retry upload</span>
+        </Button>
+        <Button size="icon-sm">
+          <X className="size-4" strokeWidth={1.5} />
+          <span className="sr-only">Cancel upload</span>
+        </Button>
+      </div>
+    </div>
+  );
+}
