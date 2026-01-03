@@ -1,8 +1,39 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Inter", sans-serif;
-  --shadow-shape: "0px 8px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03";
-  --shadow-shape-content: "";
-  --text-xxs: "0.625rem";
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+}
+@keyframes border-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@utility animated-border {
+  --border-angle: 0turn;
+
+  background: linear-gradient(
+        45deg,
+        #09090b,
+        theme(colors.zinc.900) 50%,
+        #09090b
+      )
+      padding-box,
+    conic-gradient(
+        from var(--border-angle),
+        theme(colors.zinc.700 / 0.48) 80%,
+        theme(colors.indigo.500) 86%,
+        theme(colors.indigo.300) 90%,
+        theme(colors.indigo.500) 94%,
+        theme(colors.zinc.600 / 0.48)
+      )
+      border-box;
+
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+@utility animated-border-spin {
+  animation: border-spin 3s linear infinite;
 }
