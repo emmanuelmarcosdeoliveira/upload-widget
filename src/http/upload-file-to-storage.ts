@@ -2,9 +2,17 @@ import axios from "axios";
 
 interface UploadFileToStorageParams {
   file: File;
+  onProgress: (sizeInBytes: number) => void;
 }
 
-export async function uploadFileStorage({ file }: UploadFileToStorageParams) {
+interface UploadFileToStorageOptions {
+  signal?: AbortSignal;
+}
+
+export async function uploadFileStorage(
+  { file, onProgress }: UploadFileToStorageParams,
+  opts?: UploadFileToStorageOptions
+) {
   const data = new FormData();
 
   data.append("file", file);
@@ -16,7 +24,12 @@ export async function uploadFileStorage({ file }: UploadFileToStorageParams) {
       headers: {
         "Content-Type": "multipart/form-data",
       },
+      signal: opts?.signal,
+      onUploadProgress(progressEvent) {
+        onProgress(progressEvent.loaded);
+      },
     }
   );
+
   return { url: response.data.url };
 }
