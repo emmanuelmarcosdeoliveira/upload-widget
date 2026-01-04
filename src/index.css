@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+}
+@keyframes border-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@utility animated-border {
+  --border-angle: 0turn;
+
+  background: linear-gradient(
+        45deg,
+        #09090b,
+        theme(colors.zinc.900) 50%,
+        #09090b
+      )
+      padding-box,
+    conic-gradient(
+        from var(--border-angle),
+        theme(colors.zinc.700 / 0.48) 80%,
+        theme(colors.indigo.500) 86%,
+        theme(colors.indigo.300) 90%,
+        theme(colors.indigo.500) 94%,
+        theme(colors.zinc.600 / 0.48)
+      )
+      border-box;
+
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+@utility animated-border-spin {
+  animation: border-spin 3s linear infinite;
+}
