@@ -37,7 +37,9 @@ para proporcionar uma experiência de usuário fluida e performática.
 **Fonte de Estudo:** [RocketSeat](https://app.rocketseat.com.br/)
 
 > [!TIP]
+> 
 > Acesse o repositório back-end da aplicação </br> > [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
+
 
 ---
 
@@ -218,6 +220,30 @@ pnpm build
 > [!IMPORTANT]
 >
 > [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
+
+
+```
+
+### 2. Instale as dependências
+
+```bash
+pnpm install
+```
+
+### 3. Execute o servidor de desenvolvimento
+
+```bash
+pnpm dev
+```
+
+A aplicação estará disponível em `http://localhost:5173` (ou outra porta indicada no terminal).
+
+### 4. Build para produção
+
+```bash
+pnpm build
+```
+
 
 Os arquivos de produção serão gerados na pasta `dist/`.
 
