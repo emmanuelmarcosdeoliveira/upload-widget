@@ -37,9 +37,7 @@ para proporcionar uma experiência de usuário fluida e performática.
 **Fonte de Estudo:** [RocketSeat](https://app.rocketseat.com.br/)
 
 > [!TIP]
-> Acesse o repositório back-end da aplicação
->
-> https://github.com/emmanuelmarcosdeoliveira/upload-widget-server
+> Acesse o repositório back-end da aplicação </br> > [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
 
 ---
 
@@ -214,6 +212,14 @@ A aplicação estará disponível em `http://localhost:5173` (ou outra porta ind
 ```bash
 pnpm build
 ```
+
+---
+
+> **Para que essa aplicação funcione corretamente o servidor back-end tem que estar em execução**
+
+> [!IMPORTANT] > [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
+
+---
 
 Os arquivos de produção serão gerados na pasta `dist/`.
 
