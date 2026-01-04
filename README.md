@@ -140,14 +140,14 @@ para proporcionar uma experiência de usuário fluida e performática.
 ```
 src/
 ├── components/          # Componentes React
-│   ├── ui/             # Componentes de UI reutilizáveis
-│   └── upload-widget-* # Componentes específicos do widget
-├── store/              # Gerenciamento de estado (Zustand)
-├── http/               # Configuração e serviços HTTP (Axios)
-├── utils/              # Funções utilitárias
-├── app.tsx             # Componente principal da aplicação
-├── main.tsx            # Ponto de entrada da aplicação
-└── index.css           # Estilos globais
+│   ├── ui/              # Componentes de UI reutilizáveis
+│   └── upload-widget-*  # Componentes específicos do widget
+├── store/               # Gerenciamento de estado (Zustand)
+├── http/                # Configuração e serviços HTTP (Axios)
+├── utils/               # Funções utilitárias
+├── app.tsx              # Componente principal da aplicação
+├── main.tsx             # Ponto de entrada da aplicação
+└── index.css            # Estilos globais
 ```
 
 ### Padrões Implementados
@@ -166,7 +166,7 @@ src/
 
 ### Pré-requisitos
 
-- **Node.js** (versão 18 ou superior)
+- **Node.js** (versão 22 ou superior)
 - **pnpm** (gerenciador de pacotes)
 
 ### Instalação do pnpm
@@ -242,7 +242,7 @@ pnpm preview
 
 <small>Emmanuel Oliveira</small>
 
-developed by 💖 [Emmanuel Oliveira](https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit)<br>
+developed by 💫 [Emmanuel Oliveira](https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit)<br>
 
 &copy; Todos os Direitos Reservados
 
