@@ -215,7 +215,9 @@ pnpm build
 
 **Para que essa aplicação funcione corretamente o servidor back-end tem que estar em execução**
 
-> [!IMPORTANT] </br> > [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
+> [!IMPORTANT]
+>
+> [Back-end](https://github.com/emmanuelmarcosdeoliveira/upload-widget-server)
 
 Os arquivos de produção serão gerados na pasta `dist/`.
 
