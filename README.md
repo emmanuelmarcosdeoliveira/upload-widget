@@ -27,7 +27,8 @@
 
 ## 📋 Sobre o Projeto
 
-**Upload Widget** é uma aplicação web moderna `fullStack` desenvolvida para converter e comprimir imagens com interface intuitiva e responsiva.
+**Upload Widget** é uma aplicação web moderna `fullStack`
+</br> desenvolvida para converter e comprimir imagens com interface intuitiva e responsiva.
 </br>
 O projeto utiliza as mais recentes tecnologias do ecossistema React, <br />
 para proporcionar uma experiência de usuário fluida e performática.
@@ -35,7 +36,7 @@ para proporcionar uma experiência de usuário fluida e performática.
 **Desenvolvido por:** [Emmanuel Oliveira](https://www.linkedin.com/in/oliveira-emmanuel/)  
 **Fonte de Estudo:** [RocketSeat](https://app.rocketseat.com.br/)
 
-> [!TIP] Dica
+> [!TIP]
 > Acesse o repositório back-end da aplicação
 > https://github.com/emmanuelmarcosdeoliveira/upload-widget-server
 
